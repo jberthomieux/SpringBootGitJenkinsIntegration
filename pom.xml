@@ -59,6 +59,29 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<executions>
+				<execution>
+				<id>default-war</id>
+				<phase>none</phase>
+				</execution>
+				
+				<execution>
+				<id>war-exploded</id>
+				
+			<configuration>
+				<webappDirectory>target/deploy</webappDirectory>
+				<arvhiveClasses>true</arvhiveClasses>
+			</configuration>
+				
+				<phase>prepare-package</phase>
+				<goals><goal>exploded</goal></goals>
+				</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
