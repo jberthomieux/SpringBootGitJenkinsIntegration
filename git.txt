@@ -1,0 +1,24 @@
+ git --version
+git config --global user.name jberthomieux
+git config --global user.email "jberthomieux@yahoo.fr"
+git init
+ls -la
+git add .
+git commit -m "first commit"
+git pull origin master --allow-unrelated-histories
+git push origin master
+
+
+
+git remote add origin
+https://jberthomieux@github.com/jberthomieux/SpringBootGitJenkinsIntegration.git
+
+git branch --set-upstream-to=<remote>/<branch> master
+git branch --set--upstream-to=origin/master
+
+$ git remote add origin remote repository URL
+# Sets the new remote
+$ git remote -v
+# Verifies the new remote URL
+git push origin master
+# Pushes the changes in your local repository up to the remote repository you specified as the origin

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class JacksonController {
-@GetMapping("/")
+	@GetMapping("/")
 	public String getMesssage(){
 		return "Welcome to SprBootGitJenkinsIntegration";
 	}
